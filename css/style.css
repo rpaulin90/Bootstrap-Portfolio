@@ -3,6 +3,29 @@ body {
   background-image: url(../images/ignasi_pattern_s.png)
 }
 
+div.col-md-8,div.col-md-3,nav {
+
+    background-color: #ffffff;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4s;
+
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    from {background-color: #4aaaa5;}
+    to {background-color: #ffffff;}
+
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {background-color: #4aaaa5;}
+    to {background-color: #ffffff;}
+}
+
 /*relative positioning of the Portfolio image titles*/
 
 .portfolio-image-text {
