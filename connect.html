@@ -8,9 +8,14 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
+<!-- left most of the CSS inline so it was easier to see where I decided to override some bootstrap -->
+
 <body style="color: #777777">
 
   <nav class="navbar navbar-default" style="background-color: #ffffff;border:1px solid #cccccc">
+
+    <!-- used mostly divs in order to make less use of my own CSS to recreate the look of the webpage. Bootsrap has many predefined paddings and margins for <section>,<h1>,<h2>,etc -->
 
     <div class="container" style="padding-top: 20px">
   
@@ -18,7 +23,7 @@
         <p class="text-center" style="margin-bottom: 0px;margin-left:0; background-color: #4aaaa5;color:white;font-family: 'Georgia', Times, Times New Roman, serif; padding: 20px; font-size: 24px">Ricardo Paulin</p>
       </div>
 
-      <!-- links -->
+      
       <div>
         <ul class="nav navbar-nav navbar-right" style="padding-top: 20px">
           <li class="text-center"><a href="index.html">About</a></li>
@@ -32,62 +37,60 @@
   </nav>
 
 
-<div class="page-wrap">
-  <div class="container">
+  <div class="page-wrap">
+    <div class="container">
 
-    <div class="container-fluid">
+      <div class="container-fluid">
 
-    <div class="row">
+      <div class="row">
 
-      <div class="col-xs-12 col-md-8" style="padding-top: 10px;padding-bottom: 10px; background-color: #ffffff; border: 1px solid #dddddd">
-        <p style="color: #4aaaa5;font-family: 'Georgia', Times, Times New Roman, serif;border-bottom: 1px solid #cccccc">Connect</p>
-        <form>
-          <div class="form-group">
-            <label for="formGroupExampleInput">Name</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="John Smith">
-          </div>
-          <div class="form-group">
-            <label for="formGroupExampleInput2">Email</label>
-            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="example@gmail.com">
-          </div>
-          <div class="form-group">
-            <label for="exampleTextarea">Message</label>
-            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary" style="background-color: #4aaaa5; border: #4aaaa5">Submit</button>
-        </form>
+        <div class="col-xs-12 col-md-8" style="padding-top: 10px;padding-bottom: 10px; background-color: #ffffff; border: 1px solid #dddddd">
+          <p style="color: #4aaaa5;font-family: 'Georgia', Times, Times New Roman, serif;border-bottom: 1px solid #cccccc">Connect</p>
+          <form>
+            <div class="form-group">
+              <label for="formGroupExampleInput">Name</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="John Smith">
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Email</label>
+              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="example@gmail.com">
+            </div>
+            <div class="form-group">
+              <label for="exampleTextarea">Message</label>
+              <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="background-color: #4aaaa5; border: #4aaaa5">Submit</button>
+          </form>
+          
+
+        </div>
+
+        <div class="col-xs-12 col-md-1"></div>
+
+        <div class="col-xs-12 col-md-3" style="padding-top: 10px; padding-bottom: 10px;background-color: #ffffff; border: 1px solid #dddddd">
+          <p style="color: #4aaaa5;font-family: 'Georgia', Times, Times New Roman, serif;border-bottom: 1px solid #cccccc">Connect With Me</p>
+            <div class="col-xs-4" style="padding-left: 0">
+                <a href="https://github.com/rpaulin90" target="_blank">
+                  <img src="images/github_square.png" alt="github logo" style="width: 50px;height:50px">
+                </a>
+            </div>
+            <div class="col-xs-4" style="padding-left: 0">
+                <a href="https://www.linkedin.com/in/rpaulin90" target="_blank">
+                  <img src="images/square-linkedin.png" alt="linkedin" style="width: 50px;height:50px">
+                </a>
+            </div>
+            <div class="col-xs-4" style="padding-left: 0">
+                <a href="http://stackoverflow.com/users/7406906/rpaulin90" target="_blank">
+                  <img src="images/stackoverflow.png" alt="stack overflow logo" style="width: 50px;height:50px">
+                </a>
+            </div>
+          
+        </div>
+        </div>
         
-
-      </div>
-
-      <div class="col-xs-12 col-md-1"></div>
-
-      <div class="col-xs-12 col-md-3" style="float:right; padding-top: 10px; padding-bottom: 10px;padding-right: 30px; background-color: #ffffff; border: 1px solid #dddddd">
-        <p style="text-align: left;color: #4aaaa5;font-family: 'Georgia', Times, Times New Roman, serif;border-bottom: 1px solid #cccccc">Connect With Me</p>
-          <div class="col-xs-4">
-              <a href="https://github.com/rpaulin90" target="_blank">
-                <img src="images/github_square.png" alt="github logo" style="width: 50px;height:50px">
-              </a>
-          </div>
-          <div class="col-xs-4">
-              <a href="https://www.linkedin.com/in/rpaulin90" target="_blank">
-                <img src="images/square-linkedin.png" alt="linkedin" style="width: 50px;height:50px">
-              </a>
-          </div>
-          <div class="col-xs-4">
-              <a href="http://stackoverflow.com/users/7406906/rpaulin90" target="_blank">
-                <img src="images/stackoverflow.png" alt="stack overflow logo" style="width: 50px;height:50px">
-              </a>
-          </div>
-        
-      </div>
       </div>
       
-    </div>
-    
-   </div>
-
-  </div>
+     </div>
 
   </div>
 
